@@ -9,6 +9,9 @@ function toCase(text) {
         } else if (text[i] >= 'a' && text[i] <= 'z') {
             lowerCase += text[i];
             upperCase += text[i].toUpperCase();
+        } else if (text[i] === ' ') {
+            lowerCase += '-';
+            upperCase += '-';
         }
     }
 
