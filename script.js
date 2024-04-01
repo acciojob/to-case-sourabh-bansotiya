@@ -1,6 +1,20 @@
 function toCase(text) {
-  // write your code here
+    let lowerCase = '';
+    let upperCase = '';
+
+    for (let i = 0; i < text.length; i++) {
+        if (text[i] >= 'A' && text[i] <= 'Z') {
+            lowerCase += text[i].toLowerCase();
+            upperCase += text[i];
+        } else if (text[i] >= 'a' && text[i] <= 'z') {
+            lowerCase += text[i];
+            upperCase += text[i].toUpperCase();
+        }
+    }
+
+    return lowerCase + '-' + upperCase;
 }
+
 
 // DO not change the code below
 
