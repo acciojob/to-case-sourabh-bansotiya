@@ -10,8 +10,8 @@ function toCase(text) {
             lowerCase += text[i];
             upperCase += text[i].toUpperCase();
         } else if (text[i] === ' ') {
-            lowerCase += ' -';
-            upperCase += ' -';
+            lowerCase += '-';
+            upperCase += '-';
         }
     }
 
